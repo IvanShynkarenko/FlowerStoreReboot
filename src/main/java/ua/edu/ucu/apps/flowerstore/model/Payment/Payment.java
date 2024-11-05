@@ -1,6 +1,6 @@
-package ua.edu.ucu.apps.flowerstore.model.Payment;
+package ua.edu.ucu.apps.flowerstore.model.payment;
 
 public interface Payment {
-    void pay(double price);
+    String pay(double price);
 }
 

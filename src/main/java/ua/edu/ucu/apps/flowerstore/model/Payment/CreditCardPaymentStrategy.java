@@ -1,16 +1,7 @@
-package ua.edu.ucu.apps.flowerstore.model.Payment;
+package ua.edu.ucu.apps.flowerstore.model.payment;
 
-import lombok.Getter;
-
-@Getter
 public class CreditCardPaymentStrategy implements Payment{
-    private String description;
-
-    public CreditCardPaymentStrategy(){
-        description = "Paid with credit card";
-    }
-
-    public void pay(double price) {
-        System.out.println("Payed with credit " + price);
+    public String pay(double price){
+        return String.valueOf(price)+ "$ were payed by Credit Card";
     }
 }
