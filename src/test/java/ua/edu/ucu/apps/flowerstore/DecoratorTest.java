@@ -1,11 +1,11 @@
-package ua.ucu.edu.apps.flowerstore;
+package ua.edu.ucu.apps.flowerstore;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import ua.ucu.edu.apps.flowerstore.model.Item;
-import ua.ucu.edu.apps.flowerstore.model.decorators.BasketDecorator;
-import ua.ucu.edu.apps.flowerstore.model.decorators.PaperDecorator;
-import ua.ucu.edu.apps.flowerstore.model.decorators.RibbonDecorator;
+import ua.edu.ucu.apps.flowerstore.model.Item;
+import ua.edu.ucu.apps.flowerstore.model.decorators.BasketDecorator;
+import ua.edu.ucu.apps.flowerstore.model.decorators.PaperDecorator;
+import ua.edu.ucu.apps.flowerstore.model.decorators.RibbonDecorator;
 
 class DecoratorTest {
 

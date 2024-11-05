@@ -1,12 +1,8 @@
 package ua.edu.ucu.apps.flowerstore.model;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter @Setter
+import lombok.Data;
+@Data
 public abstract class Item {
-    private double price;
-    private String description;
-    public abstract double getPrice();
+    String description;
     public abstract double price();
 }

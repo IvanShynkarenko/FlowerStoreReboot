@@ -12,11 +12,6 @@ public class BasketDecorator extends ItemDecorator{
         return item.getDescription()+" with basket decorator";
     }
     public double price(){
-        return 4 + item.getPrice();
-    }
-    @Override
-    public double getPrice() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getPrice'");
+        return 4 + item.price();
     }
 }

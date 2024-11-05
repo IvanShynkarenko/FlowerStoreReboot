@@ -48,10 +48,5 @@ public class FlowerBucket extends Item{
             }
         }
         return returnFlowers;
-    }
-    @Override
-    public double getPrice() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getPrice'");
     };
 }

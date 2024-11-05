@@ -12,11 +12,6 @@ public class PaperDecorator extends ItemDecorator{
         return item.getDescription()+" with paper decorator";
     }
     public double price(){
-        return 13 + item.getPrice();
-    }
-    @Override
-    public double getPrice() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getPrice'");
+        return 13 + item.price();
     }
 }
