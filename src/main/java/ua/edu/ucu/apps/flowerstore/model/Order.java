@@ -1,7 +1,7 @@
-package ua.edu.ucu.apps.flowerstore.Order;
+package ua.edu.ucu.apps.flowerstore.model;
 
 import java.util.LinkedList;
-
+import lombok.*;
 import ua.edu.ucu.apps.flowerstore.Delivery.Delivery;
 import ua.edu.ucu.apps.flowerstore.Payment.Payment;
 import ua.edu.ucu.apps.flowerstore.flower.Item;
