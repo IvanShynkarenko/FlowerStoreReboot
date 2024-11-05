@@ -1,4 +1,4 @@
-package main.java.ua.edu.ucu.apps.flowerstore.model;
+package ua.edu.ucu.apps.flowerstore.model;
 
 import org.springframework.stereotype.Indexed;
 

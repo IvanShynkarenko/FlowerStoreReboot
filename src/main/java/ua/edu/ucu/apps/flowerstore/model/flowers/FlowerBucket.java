@@ -1,11 +1,11 @@
-package ua.ucu.edu.apps.flowerstore.model.flowers;
+package ua.edu.ucu.apps.flowerstore.model.flowers;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import lombok.*;
-import ua.ucu.edu.apps.flowerstore.model.Flower;
-import ua.ucu.edu.apps.flowerstore.model.Item;
+import ua.edu.ucu.apps.flowerstore.model.Flower;
+import ua.edu.ucu.apps.flowerstore.model.Item;
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class FlowerBucket extends Item{
@@ -48,5 +48,10 @@ public class FlowerBucket extends Item{
             }
         }
         return returnFlowers;
+    }
+    @Override
+    public double getPrice() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getPrice'");
     };
 }

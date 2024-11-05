@@ -1,4 +1,4 @@
-package main.java.ua.edu.ucu.apps.flowerstore.model;
+package ua.edu.ucu.apps.flowerstore.model;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

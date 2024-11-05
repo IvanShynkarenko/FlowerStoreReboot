@@ -1,41 +1,35 @@
 package ua.edu.ucu.apps.flowerstore.model;
 
 import java.util.LinkedList;
+
 import lombok.*;
-import ua.edu.ucu.apps.flowerstore.Delivery.Delivery;
-import ua.edu.ucu.apps.flowerstore.Payment.Payment;
-import ua.edu.ucu.apps.flowerstore.flower.Item;
-
+import ua.edu.ucu.apps.flowerstore.model.delivery.Delivery;
+import ua.edu.ucu.apps.flowerstore.model.payment.Payment;
+@Data
 public class Order {
-    private LinkedList<Item> items;
-    private Payment payment;
-    private Delivery delivery;
-
-    public void SetPaymentStrategy(Payment paymentStrategy){
-        this.payment = paymentStrategy;
+    LinkedList<Item> items = new LinkedList<>();
+    Payment payment;
+    Delivery delivery;
+    public void setPaymentStrategy(Payment payment){
+        this.payment = payment;
     }
-
-    public void SetDeliveryStrategy(Delivery deliveryStrategy){
-        this.delivery = deliveryStrategy;
+    public void setbeliveryStrategy(Delivery delivery){
+        this.delivery=delivery;
     }
-
     public double calculateTotalPrice(){
-        double price = 0;
-        for(Item item: items){
-            price += item.getPrice();
+        double sum = 0;
+        for (Item i : items){
+            sum+=i.price();
         }
-        return price;
-    }
-
-    public void processOrder(){
-        payment.pay(calculateTotalPrice());
-        delivery.deliver(items);
+        return sum;
     }
     public void addItem(Item item){
         items.add(item);
     }
-
     public void removeItem(Item item){
         items.remove(item);
+    }
+    public String processorder(){
+        return payment.pay(calculateTotalPrice());
     }
 }

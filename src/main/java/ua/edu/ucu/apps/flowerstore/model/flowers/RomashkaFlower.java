@@ -1,5 +1,5 @@
-package ua.ucu.edu.apps.flowerstore.model.flowers;
-import ua.ucu.edu.apps.flowerstore.model.Flower;
+package ua.edu.ucu.apps.flowerstore.model.flowers;
+import ua.edu.ucu.apps.flowerstore.model.Flower;
 public class RomashkaFlower extends Flower{
     public RomashkaFlower() {
         super();

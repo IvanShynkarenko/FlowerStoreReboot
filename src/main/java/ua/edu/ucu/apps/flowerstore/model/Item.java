@@ -1,4 +1,4 @@
-package ua.edu.ucu.apps.flowerstore.flower;
+package ua.edu.ucu.apps.flowerstore.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -8,4 +8,5 @@ public abstract class Item {
     private double price;
     private String description;
     public abstract double getPrice();
+    public abstract double price();
 }

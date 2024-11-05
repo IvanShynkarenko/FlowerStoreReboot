@@ -1,8 +1,8 @@
-package ua.edu.ucu.apps.flowerstore.Delivery;
+package ua.edu.ucu.apps.flowerstore.model.Delivery;
 
 import java.util.List;
 import lombok.Getter;
-import ua.edu.ucu.apps.flowerstore.flower.Item;
+import ua.edu.ucu.apps.flowerstore.model.Item;
 
 @Getter
 public class PostDeliveryStrategy implements Delivery {

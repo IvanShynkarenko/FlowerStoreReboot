@@ -1,8 +1,8 @@
-package ua.edu.ucu.apps.flowerstore.Delivery;
+package ua.edu.ucu.apps.flowerstore.model.Delivery;
 import lombok.Getter;
-import java.util.List;
+import ua.edu.ucu.apps.flowerstore.model.Item;
 
-import ua.edu.ucu.apps.flowerstore.flower.Item;
+import java.util.List;
 
 @Getter
 public class DHLDeliveryStrategy implements Delivery {

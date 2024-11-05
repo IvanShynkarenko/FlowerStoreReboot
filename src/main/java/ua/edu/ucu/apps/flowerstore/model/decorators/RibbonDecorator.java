@@ -1,6 +1,6 @@
-package ua.ucu.edu.apps.flowerstore.model.decorators;
+package ua.edu.ucu.apps.flowerstore.model.decorators;
 import lombok.*;
-import ua.ucu.edu.apps.flowerstore.model.Item;
+import ua.edu.ucu.apps.flowerstore.model.Item;
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class RibbonDecorator extends ItemDecorator{
@@ -13,5 +13,10 @@ public class RibbonDecorator extends ItemDecorator{
     }
     public double price(){
         return 40 + item.price();
+    }
+    @Override
+    public double getPrice() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getPrice'");
     }
 }
