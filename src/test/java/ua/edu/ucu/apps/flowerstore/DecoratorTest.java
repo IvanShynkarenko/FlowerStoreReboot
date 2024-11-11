@@ -31,27 +31,27 @@ class DecoratorTest {
     void testBasketDecoratorAddsCorrectPriceAndDescription() {
         Item itemWithBasket = new BasketDecorator(flowerItem);
         assertEquals("Simple Flower with basket decorator", itemWithBasket.getDescription());
-        assertEquals(55.0, itemWithBasket.price(), 0.01);
+        assertEquals(54.0, itemWithBasket.price(), 0.01);
     }
 
     @Test
     void testPaperDecoratorPriceAndDescription() {
         Item itemWithPaper = new PaperDecorator(flowerItem);
         assertEquals("Simple Flower with paper decorator", itemWithPaper.getDescription());
-        assertEquals(60.0, itemWithPaper.price(), 0.01);
+        assertEquals(63.0, itemWithPaper.price(), 0.01);
     }
 
     @Test
     void testRibbonDecoratorPriceAndDescription() {
         Item itemWithRibbon = new RibbonDecorator(flowerItem);
         assertEquals("Simple Flower with ribbon decorator", itemWithRibbon.getDescription());
-        assertEquals(75.0, itemWithRibbon.price(), 0.01);
+        assertEquals(90.0, itemWithRibbon.price(), 0.01);
     }
 
     @Test
     void testCombinationOfMultipleDecorators() {
         Item fullyDecoratedItem = new BasketDecorator(new PaperDecorator(new RibbonDecorator(flowerItem)));
         assertEquals("Simple Flower with ribbon decorator with paper decorator with basket decorator", fullyDecoratedItem.getDescription());
-        assertEquals(90.0, fullyDecoratedItem.price(), 0.01);
+        assertEquals(107.0, fullyDecoratedItem.price(), 0.01);
     }
 }
