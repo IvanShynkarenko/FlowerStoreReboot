@@ -1,4 +1,4 @@
-package ua.edu.ucu.apps.flowerstore.model;
+package ua.edu.ucu.apps.flowerstore.model.users;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,6 +23,7 @@ public class AppUser {
     private LocalDate dob;
     @Transient
     private Integer age;
+    private String status;
     public Integer getAge(){
         return Period.between(dob, LocalDate.now()).getYears();
     }

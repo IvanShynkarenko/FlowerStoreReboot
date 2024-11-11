@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ua.edu.ucu.apps.flowerstore.model.AppUser;
+
+import ua.edu.ucu.apps.flowerstore.model.users.AppUser;
 import ua.edu.ucu.apps.flowerstore.service.AppUserService;
 
 import java.util.List;
